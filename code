@@ -1,0 +1,11 @@
+import pyautogui, webbrowser
+from time import sleep
+
+webbrowser.("https://web.whatsapp.com/send?phone=+#type number for spam#")
+sleep(10)
+
+with open ("#type the file were is the text you want to spam#", "r") as file:
+    for line in file:
+      pyautogui.typewriter(line)
+      pyautogui.press("enter")
+      
